@@ -1,4 +1,19 @@
-variables-one:
+smartcontract-one:
 	mkdir -p contracts
-	cp ../src/contracts/Variables.sol contracts/
-	npx hardhat test test_variables.js --grep 'step 1'
+	cp ../src/contracts/SmartContract.sol contracts/
+	npx hardhat test test_smart_contract.js --grep 'step 1'
+
+smartcontract-two:
+	mkdir -p contracts
+	cp ../src/contracts/SmartContract.sol contracts/
+	npx hardhat test test_smart_contract.js --grep 'step 2'
+
+smartcontract-three:
+	mkdir -p contracts
+	cp ../src/contracts/SmartContract.sol contracts/
+	npx hardhat test test_smart_contract.js --grep 'step 3'
+
+smartcontract-four:
+	mkdir -p contracts
+	cp ../src/contracts/SmartContract.sol contracts/
+	npx hardhat test test_smart_contract.js --grep 'step 4'
