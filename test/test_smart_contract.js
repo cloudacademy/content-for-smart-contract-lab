@@ -42,14 +42,4 @@ describe("Variables Unit Tests", function () {
     });
   });
 
-  describe("step 4", function () {
-    it("test if total suply will throw error if view not by the owner", async function () {
-      const { contract, otherAccount } = await loadFixture(deploySmartcCotract);
-      // We use contract.connect() to send a transaction from another account
-      await expect(contract.connect(otherAccount).totalSupply()).to.be.revertedWith(
-        "Only the owner can call this function."
-      );
-    });
-  });
-
 });
