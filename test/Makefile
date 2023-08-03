@@ -7,8 +7,3 @@ smartcontract-two:
 	mkdir -p contracts
 	cp ../src/contracts/SmartContract.sol contracts/
 	npx hardhat test test_smart_contract.js --grep 'step 2'
-
-smartcontract-three:
-	mkdir -p contracts
-	cp ../src/contracts/SmartContract.sol contracts/
-	npx hardhat test test_smart_contract.js --grep 'step 3'

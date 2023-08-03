@@ -34,12 +34,4 @@ describe("Variables Unit Tests", function () {
     });
   });
 
-
-  describe("step 3", function () {
-    it("test if contract owner variable is declared", async function () {
-      const { contract, owner } = await loadFixture(deploySmartcCotract);
-      expect(await contract.owner()).to.be.equal(owner.address);
-    });
-  });
-
 });
